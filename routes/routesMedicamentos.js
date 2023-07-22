@@ -44,9 +44,6 @@ routesMedicamentos.get('/validar/proveedor',(req,res)=>{
   });
 });
 
-
-  
-
 routesMedicamentos.get('/ventas', (req, res) => {
     req.getConnection((err, conn) => {
       if (err) return res.send(err);
@@ -108,7 +105,7 @@ routesMedicamentos.put('/:id',(req,res)=>{
         });
     });
 });
- 
+
 routesMedicamentos.delete('/:id', (req, res) => {
     req.getConnection((err, conn) => {
         if (err) return res.send('error')
